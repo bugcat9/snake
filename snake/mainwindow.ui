@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1072</width>
+    <height>641</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QGraphicsView" name="GameView"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1072</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>开始(F)</string>
+    </property>
+    <addaction name="actionstart"/>
+    <addaction name="separator"/>
+    <addaction name="actionstop"/>
+    <addaction name="separator"/>
+    <addaction name="actionReset"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>等级(E)</string>
+    </property>
+    <addaction name="actionEazy"/>
+    <addaction name="separator"/>
+    <addaction name="actionMid"/>
+    <addaction name="separator"/>
+    <addaction name="actionHard"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>角色(B)</string>
+    </property>
+    <addaction name="actionMan"/>
+    <addaction name="separator"/>
+    <addaction name="actionAI"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionstart">
+   <property name="text">
+    <string>游戏开始</string>
+   </property>
+  </action>
+  <action name="actionstop">
+   <property name="text">
+    <string>游戏停止</string>
+   </property>
+  </action>
+  <action name="actionEazy">
+   <property name="text">
+    <string>简单</string>
+   </property>
+  </action>
+  <action name="actionMid">
+   <property name="text">
+    <string>中等</string>
+   </property>
+  </action>
+  <action name="actionHard">
+   <property name="text">
+    <string>困难</string>
+   </property>
+  </action>
+  <action name="actionMan">
+   <property name="text">
+    <string>人类</string>
+   </property>
+  </action>
+  <action name="actionAI">
+   <property name="text">
+    <string>电脑</string>
+   </property>
+  </action>
+  <action name="actionReset">
+   <property name="text">
+    <string>重新开始</string>
+   </property>
+   <property name="toolTip">
+    <string>Reset</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
